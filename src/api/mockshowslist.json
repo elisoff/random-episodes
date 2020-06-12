@@ -1,0 +1,470 @@
+[
+    {
+        "score": 17.572388,
+        "show": {
+            "id": 49,
+            "url": "http://www.tvmaze.com/shows/49/brooklyn-nine-nine",
+            "name": "Brooklyn Nine-Nine",
+            "type": "Scripted",
+            "language": "English",
+            "genres": ["Comedy", "Action", "Crime"],
+            "status": "Running",
+            "runtime": 30,
+            "premiered": "2013-09-17",
+            "officialSite": "https://www.nbc.com/brooklyn-nine-nine",
+            "schedule": {
+                "time": "20:30",
+                "days": ["Thursday"]
+            },
+            "rating": {
+                "average": 8.2
+            },
+            "weight": 100,
+            "network": {
+                "id": 1,
+                "name": "NBC",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 35774,
+                "thetvdb": 269586,
+                "imdb": "tt2467372"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/235/587547.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/235/587547.jpg"
+            },
+            "summary": "<p><b>Brooklyn Nine-Nine</b> is an ensemble comedy about a talented-but-carefree detective, a by-the-book police captain and their precinct colleagues. While based in the workplace, Brooklyn Nine-Nine is not really about the job – it's about the men and women behind the badge.</p>",
+            "updated": 1587766355,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/49"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1829751"
+                }
+            }
+        }
+    },
+    {
+        "score": 14.054965,
+        "show": {
+            "id": 10476,
+            "url": "http://www.tvmaze.com/shows/10476/brooklyn-11223",
+            "name": "Brooklyn 11223",
+            "type": "Reality",
+            "language": "English",
+            "genres": [],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2012-03-26",
+            "officialSite": "http://www.oxygen.com/brooklyn-11223",
+            "schedule": {
+                "time": "23:00",
+                "days": ["Monday"]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 52,
+            "network": {
+                "id": 79,
+                "name": "Oxygen",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 31223,
+                "thetvdb": 257642,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/35/88618.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/35/88618.jpg"
+            },
+            "summary": "<p>Oxygen takes viewers to the small, close-knit community of Bay Ridge, Brooklyn and surrounding neighborhoods including Coney Island, Brighton Beach and Bensonhurst in Oxygen's newest docu-series <b>Brooklyn 11223</b>, premiering on Monday, March 26 at 11PM ET/PT. The series provides a voyeuristic look into the lives of a group of twentysomething friends whose once rock-solid friendships have been torn apart by betrayal.</p><p>Bay Ridge was made famous by the iconic film \"Saturday Night Fever\" thirty-five years ago. The film's coming-of-age themes of longing for escape and rolling with a tough crowd remain very much the same today. Nothing is more important in these Brooklyn neighborhoods than loyalty, respect and family. This is the story of someone who may have broken that code during an evening clouded in mystery when one friend may have betrayed another by seducing a boyfriend. Vividly shot in a lush documentary style that showcases the urban streetscapes of Brooklyn, <i>Brooklyn 11223</i> follows the story of childhood friends Joey Lynn and Christie and their respective group of friends as they spend their summer learning about themselves, the bonds of friendship and the price of betrayal.</p>",
+            "updated": 1573226112,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/10476"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/539095"
+                }
+            }
+        }
+    },
+    {
+        "score": 14.054965,
+        "show": {
+            "id": 11518,
+            "url": "http://www.tvmaze.com/shows/11518/brooklyn-south",
+            "name": "Brooklyn South",
+            "type": "Scripted",
+            "language": "English",
+            "genres": ["Drama", "Action", "Crime"],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "1997-09-22",
+            "officialSite": null,
+            "schedule": {
+                "time": "22:00",
+                "days": ["Monday"]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 53,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 2917,
+                "thetvdb": 75517,
+                "imdb": "tt0118275"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/38/97317.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/38/97317.jpg"
+            },
+            "summary": "<p>Adam Rodriguez, Yancy Butler, Michael DeLuise. Steven Bochco's short-lived, top-notch police drama was the first TV series to earn a mature rating for its gritty, visceral storytelling and high-impact characters.</p>",
+            "updated": 1573327832,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/11518"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/567634"
+                }
+            }
+        }
+    },
+    {
+        "score": 14.054965,
+        "show": {
+            "id": 32022,
+            "url": "http://www.tvmaze.com/shows/32022/brooklyn-bridge",
+            "name": "Brooklyn Bridge",
+            "type": "Scripted",
+            "language": "English",
+            "genres": ["Drama", "Comedy"],
+            "status": "Ended",
+            "runtime": 30,
+            "premiered": "1991-09-20",
+            "officialSite": null,
+            "schedule": {
+                "time": "",
+                "days": ["Friday"]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 72197,
+                "imdb": "tt0101055"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/128/320260.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/128/320260.jpg"
+            },
+            "summary": "<p>This nostalgic family comedy, which series creator Gary David Goldberg loosely based on his own childhood, chronicles life in 1956 Brooklyn, N.Y., from the perspective of Alan Silver, a middle-class Jewish 14-year-old who shares an apartment with his parents -- George, a postal worker, and Phyllis, who also works outside the home -- and his younger brother, Nathaniel. Phyllis' parents, Jules and Sophie, live in the same building. Alan is dating Katie Monahan, a Catholic girl, which is hard for his grandmother to accept, although in every other respect Sophie is stern but loving and tolerant.</p>",
+            "updated": 1573411373,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/32022"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1306860"
+                }
+            }
+        }
+    },
+    {
+        "score": 14.054965,
+        "show": {
+            "id": 3263,
+            "url": "http://www.tvmaze.com/shows/3263/taxi-brooklyn",
+            "name": "Taxi Brooklyn",
+            "type": "Scripted",
+            "language": "English",
+            "genres": ["Comedy", "Action", "Crime"],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2014-04-14",
+            "officialSite": null,
+            "schedule": {
+                "time": "22:00",
+                "days": ["Friday"]
+            },
+            "rating": {
+                "average": 5.7
+            },
+            "weight": 86,
+            "network": {
+                "id": 129,
+                "name": "TF1",
+                "country": {
+                    "name": "France",
+                    "code": "FR",
+                    "timezone": "Europe/Paris"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 37073,
+                "thetvdb": 279884,
+                "imdb": "tt3027506"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/17/43816.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/17/43816.jpg"
+            },
+            "summary": "<p><b>Taxi Brooklyn</b> is an action-comedy police procedural centered on the fractious, closely bonded partnership between a streetwise Marseilles-born New York City taxi driver and an intensely driven NYPD detective for whom this immigrant cabbie becomes chauffeur, insider on the streets, and unofficial partner.</p>",
+            "updated": 1546348304,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/3263"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/220049"
+                }
+            }
+        }
+    },
+    {
+        "score": 14.054965,
+        "show": {
+            "id": 9105,
+            "url": "http://www.tvmaze.com/shows/9105/brooklyn-da",
+            "name": "Brooklyn DA",
+            "type": "Reality",
+            "language": "English",
+            "genres": ["Crime"],
+            "status": "Ended",
+            "runtime": 60,
+            "premiered": "2013-05-28",
+            "officialSite": null,
+            "schedule": {
+                "time": "22:00",
+                "days": ["Tuesday"]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 49,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 35822,
+                "thetvdb": 269915,
+                "imdb": null
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/32/80375.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/32/80375.jpg"
+            },
+            "summary": "<p>This series follows some of the 500 prosecutors working at Kings County District Attorney's Office in Brooklyn, N.Y., and tells their emotional stories as they deal with some of the toughest high-profiles cases in the country -- including sex trafficking, murder, corrupt judges and politicians, and mobsters. As the attorneys share their successes and failures, they also allow a peek at their eccentricities and the big personalities that drive them to take on the everyday challenges of working at one of the nation's largest DA's offices.</p>",
+            "updated": 1505913561,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/9105"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/493553"
+                }
+            }
+        }
+    },
+    {
+        "score": 11.530466,
+        "show": {
+            "id": 13715,
+            "url": "http://www.tvmaze.com/shows/13715/brooklyn-kinda-love",
+            "name": "Brooklyn Kinda Love",
+            "type": "Reality",
+            "language": "English",
+            "genres": [],
+            "status": "Ended",
+            "runtime": 30,
+            "premiered": "2011-01-15",
+            "officialSite": null,
+            "schedule": {
+                "time": "22:00",
+                "days": ["Saturday"]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 56,
+            "network": {
+                "id": 1035,
+                "name": "Playboy TV",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 27393,
+                "thetvdb": 252092,
+                "imdb": "tt1796785"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/47/118354.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/47/118354.jpg"
+            },
+            "summary": "<p>Four New York couples are about to make their private lives public. Join the Emmy award-winning team behind 'Taxicab Confessions' as they expose the passion and the pain that go along with modern love. On the surface, these New York couples seem to have perfect relationships. But behind closed doors, there are infidelity accusations, addiction struggles, and secret longings for same-sex encounters. Watch what happens when the documentary crews follow their daily lives and film every 'intimate' moment. Raw, unpredictable, and highly addictive, you've never seen a reality series quite like <b>Brooklyn Kinda Love</b>.</p>",
+            "updated": 1573497174,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/13715"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/635415"
+                }
+            }
+        }
+    },
+    {
+        "score": 11.530466,
+        "show": {
+            "id": 39356,
+            "url": "http://www.tvmaze.com/shows/39356/hustle-in-brooklyn",
+            "name": "Hustle in Brooklyn",
+            "type": "Reality",
+            "language": "English",
+            "genres": [],
+            "status": "Running",
+            "runtime": 60,
+            "premiered": "2018-10-16",
+            "officialSite": "https://www.bet.com/shows/hustle-in-brooklyn.html",
+            "schedule": {
+                "time": "22:00",
+                "days": ["Tuesday"]
+            },
+            "rating": {
+                "average": null
+            },
+            "weight": 0,
+            "network": {
+                "id": 56,
+                "name": "BET",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": null,
+                "thetvdb": 354593,
+                "imdb": "tt8323700"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/172/432408.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/172/432408.jpg"
+            },
+            "summary": "<p><b>Hustle in Brooklyn </b>tracks a group of ambitious Millennials in the pursuit of personal and professional success.</p>",
+            "updated": 1543314388,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/39356"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1571593"
+                }
+            }
+        }
+    },
+    {
+        "score": 0.7392095,
+        "show": {
+            "id": 124,
+            "url": "http://www.tvmaze.com/shows/124/2-broke-girls",
+            "name": "2 Broke Girls",
+            "type": "Scripted",
+            "language": "English",
+            "genres": ["Comedy"],
+            "status": "Ended",
+            "runtime": 30,
+            "premiered": "2011-09-19",
+            "officialSite": "http://www.cbs.com/shows/2_broke_girls/",
+            "schedule": {
+                "time": "21:30",
+                "days": ["Monday"]
+            },
+            "rating": {
+                "average": 7.1
+            },
+            "weight": 95,
+            "network": {
+                "id": 2,
+                "name": "CBS",
+                "country": {
+                    "name": "United States",
+                    "code": "US",
+                    "timezone": "America/New_York"
+                }
+            },
+            "webChannel": null,
+            "externals": {
+                "tvrage": 28416,
+                "thetvdb": 248741,
+                "imdb": "tt1845307"
+            },
+            "image": {
+                "medium": "http://static.tvmaze.com/uploads/images/medium_portrait/63/158548.jpg",
+                "original": "http://static.tvmaze.com/uploads/images/original_untouched/63/158548.jpg"
+            },
+            "summary": "<p><b>2 Broke Girls</b> is a comedy about two young women waitressing at a greasy spoon diner who strike up an unlikely friendship in the hopes of launching a successful business - if only they can raise the cash. Sassy, streetwise Max Black works two jobs just to get by, one of which is waiting tables during the night shift at the retro-hip Williamsburg Diner. Sophisticated Caroline Channing is an uptown trust fund princess who's having a run of bad luck that forces her to reluctantly give waitressing a shot. At first, Max sees Caroline as yet another in a long line of inept servers she must cover for, but she's surprised to find that Caroline has as much substance as she does style.</p><p>When Caroline discovers Max's knack for baking amazing cupcakes, she sees a lucrative future for them, but first they need to raise the start-up money. While they save their tips, they'll stay at the restaurant, working with Oleg, an overly flirtatious Russian cook; Earl, a 75-year-old kool-kat cashier; and Han Lee, the new, eager-to-please owner of the diner. Working together, these two broke girls living in one expensive city might just find the perfect recipe for their big break.</p>",
+            "updated": 1587706925,
+            "_links": {
+                "self": {
+                    "href": "http://api.tvmaze.com/shows/124"
+                },
+                "previousepisode": {
+                    "href": "http://api.tvmaze.com/episodes/1107556"
+                }
+            }
+        }
+    }
+]

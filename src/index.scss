@@ -1,0 +1,9 @@
+@charset "utf-8";
+
+@import '~bulma/bulma.sass';
+
+.show-summary {
+    overflow: hidden;
+    word-wrap: break-word;
+    height: 150px;
+}
