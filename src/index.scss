@@ -1,9 +1,29 @@
 @charset "utf-8";
 
+$progress-indeterminate-duration: 0.8s;
+
 @import '~bulma/bulma.sass';
+
+.home-page {
+    height: 80vh;
+
+    .columns {
+        height: 100%;
+    }
+}
 
 .show-summary {
     overflow: hidden;
     word-wrap: break-word;
     height: 150px;
+}
+
+.custom-navbar {
+    align-items: center;
+}
+
+.custom-footer {
+    position: absolute;
+    bottom: 0;
+    width: 100vw;
 }

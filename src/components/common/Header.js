@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Link } from 'react-router-dom';
 
-export default function Breadcrumb({ currentPage }) {
+export default function Header({ currentPage }) {
     function getActiveClassIfActive(page) {
         return currentPage === page ? 'is-active' : '';
     }
@@ -11,8 +12,16 @@ export default function Breadcrumb({ currentPage }) {
     }
 
     return (
-        <div className="box">
-            <nav className="breadcrumb" aria-label="breadcrumbs">
+        <nav
+            className="navbar is-fixed-top custom-navbar has-background-light"
+            role="navigation"
+            aria-label="main navigation"
+        >
+            <div className="navbar-brand custom-navbar ml-3">
+                <h3 className="is-size-4">Random episodes</h3>
+            </div>
+
+            <nav className="breadcrumb ml-5" aria-label="breadcrumbs">
                 <ul>
                     <li className={getActiveClassIfActive('/')}>
                         <Link to="/">Home</Link>
@@ -24,6 +33,10 @@ export default function Breadcrumb({ currentPage }) {
                     )}
                 </ul>
             </nav>
-        </div>
+        </nav>
     );
 }
+
+Header.propTypes = {
+    currentPage: PropTypes.oneOf(['/', '/results']),
+};

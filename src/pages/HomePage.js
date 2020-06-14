@@ -1,37 +1,31 @@
 import React from 'react';
-import Breadcrumb from '../components/common/Breadcrumb';
-import { Link } from 'react-router-dom';
+import Header from '../components/common/Header';
+import { useHistory } from 'react-router-dom';
+import Search from '../components/Search';
+import Footer from '../components/common/Footer';
 
 export default function HomePage() {
+    const history = useHistory();
+
+    function handleOnSearch(searchQuery) {
+        if (searchQuery) {
+            history.push(`/results?q=${searchQuery}`);
+        }
+    }
+
     return (
         <>
-            <Breadcrumb currentPage="/" />
-            <div className="container">
-
-                <Link to="/results">CLICK HERE</Link>
+            <Header currentPage="/" />
+            <div className="container home-page">
+                <div className="columns is-centered is-vcentered">
+                    <div className="column is-6">
+                        <h3 className="title">TV Shows Search</h3>
+                        <Search onSearch={handleOnSearch} inputValue="" />
+                    </div>
+                </div>
             </div>
 
-            {/*<div className="container">
-            <button
-                type="button"
-                className="button is-primary"
-                onClick={handleRandomEpClick}
-            >
-                Random episode
-            </button>
-
-            { <div className="panel">
-        <div className="panel-block">
-            {Object.keys(randomEpisode).length !== 0 && (
-                <span>
-                    {randomEpisode.name} - {randomEpisode.season}x
-                    {randomEpisode.number}
-                </span>
-            )}
-        </div>
-    </div> 
-            
-        </div>*/}
+            <Footer />
         </>
     );
 }

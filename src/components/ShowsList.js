@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { DateTime } from 'luxon';
+
 import Modal from './common/Modal';
 import RandomizeEpisodeModal from './RandomizeEpisodeModal';
 
@@ -99,6 +100,7 @@ export default function ShowsList({ list }) {
                     </div>
                 </div>
             ))}
+            }
             {modalInfo && (
                 <Modal
                     textContent={modalInfo.textContent}
