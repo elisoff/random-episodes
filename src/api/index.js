@@ -1,21 +1,38 @@
-import EpisodesData from './mockepisodesdata.json';
-import ShowsList from './mockshowslist.json';
-
 export default function API() {
-    function getEpisodesByShowId(showId) {
-        const promise = new Promise((resolve) =>
-            setTimeout(() => resolve(EpisodesData), 300)
-        );
+    async function getEpisodesByShowId(showId) {
+        if (!showId) {
+            throw new Error('showId is required');
+        }
 
-        return promise;
+        try {
+            const response = await fetch(`/api/shows/${showId}/episodes`);
+
+            if (!response.ok) {
+                throw new Error('API call failed');
+            }
+
+            return response.json();
+        } catch (error) {
+            throw error;
+        }
     }
 
-    function getShowsByQuery(query) {
-        const promise = new Promise((resolve) =>
-            setTimeout(() => resolve(ShowsList), 300)
-        );
+    async function getShowsByQuery(query) {
+        if (!query) {
+            throw new Error('q is required');
+        }
 
-        return promise;
+        try {
+            const response = await fetch(`/api/shows/?q=${query}`);
+
+            if (!response.ok) {
+                throw new Error('API call failed');
+            }
+
+            return response.json();
+        } catch (error) {
+            throw error;
+        }
     }
 
     return { getEpisodesByShowId, getShowsByQuery };

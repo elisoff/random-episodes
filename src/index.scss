@@ -23,7 +23,35 @@ $progress-indeterminate-duration: 0.8s;
 }
 
 .custom-footer {
-    position: absolute;
+    position: relative;
     bottom: 0;
     width: 100vw;
+}
+
+.episode-modal {
+    .image-placeholder {
+        background: #f1f1f1;
+        height: 140px;
+        width: 100%;
+    }
+
+    .placeholder {
+        background: #f1f1f1;
+        margin: 5px 0;
+
+        &.p-title {
+            height: 20px;
+            width: 100%;
+        }
+
+        &.p-subtitle {
+            height: 20px;
+            width: 80%;
+        }
+
+        &.p-summary {
+            height: 140px;
+            width: 100%;
+        }
+    }
 }

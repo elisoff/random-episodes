@@ -30,9 +30,14 @@ export default function ShowsList({ list }) {
     function buildShowCardHeader(show) {
         return (
             <div className="card-image is-centered">
-                <figure className="image">
-                    <img src={show.image.medium} alt={show.name} />
-                </figure>
+                {show.image && (
+                    <figure className="image is-3by4">
+                        <img src={show.image.medium} alt={show.name} />
+                    </figure>
+                )}
+                {!show.image && (
+                    <figure className="image is-3by4 has-background-light"></figure>
+                )}
             </div>
         );
     }
@@ -71,36 +76,73 @@ export default function ShowsList({ list }) {
                 >
                     See full summary
                 </button>
-
-                <button
-                    type="button"
-                    className="button is-primary is-small is-pulled-right"
-                    onClick={handleSelectShowClick.bind(this, show)}
-                >
-                    Select
-                </button>
             </>
+        );
+    }
+
+    function buildShowCardFooter(show) {
+        const { externals } = show;
+        const imdbUrl = 'https://www.imdb.com/title/';
+        let imdbButton = null;
+
+        if (externals && externals.imdb) {
+            const showImdbUrl = `${imdbUrl}${externals.imdb}`;
+
+            imdbButton = (
+                <div className="card-footer-item">
+                    <span className="is-size-7">
+                        View on{' '}
+                        <a
+                            href={showImdbUrl}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            IMDb
+                        </a>
+                    </span>
+                </div>
+            );
+        }
+
+        return (
+            <footer className="card-footer">
+                {imdbButton}
+                <div className="card-footer-item">
+                    <button
+                        type="button"
+                        className="button is-primary is-small"
+                        onClick={handleSelectShowClick.bind(this, show)}
+                    >
+                        Select
+                    </button>
+                </div>
+            </footer>
         );
     }
 
     return (
         <div className="columns is-multiline">
-            {list.map(({ show }) => (
-                <div className="column is-one-quarter" key={show.id}>
-                    <div className="card my-3">
-                        {buildShowCardHeader(show)}
-                        <div className="card-content">
-                            <div className="content">
-                                {buildShowCardTitle(show)}
-                            </div>
-                            <div className="content is-small">
-                                {buildShowCardContent(show)}
+            {list &&
+                list.map(({ show }) => {
+                    console.log(show);
+                    return (
+                        <div className="column is-one-quarter" key={show.id}>
+                            <div className="card my-3">
+                                {buildShowCardHeader(show)}
+                                <div className="card-content">
+                                    <div className="content">
+                                        {buildShowCardTitle(show)}
+                                    </div>
+                                    <div className="content is-small">
+                                        {buildShowCardContent(show)}
+                                    </div>
+                                </div>
+                                {buildShowCardFooter(show)}
                             </div>
                         </div>
-                    </div>
-                </div>
-            ))}
-            }
+                    );
+                })}
+
             {modalInfo && (
                 <Modal
                     textContent={modalInfo.textContent}

@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
 import Header from '../components/common/Header';
+import Footer from '../components/common/Footer';
 import ProgressBar from '../components/common/ProgressBar';
 import ShowsList from '../components/ShowsList';
 import Search from '../components/Search';
@@ -62,6 +63,7 @@ export default function ResultsPage() {
                 )}
                 {!isLoading && shows.length > 0 && <ShowsList list={shows} />}
             </div>
+            <Footer />
         </>
     );
 }

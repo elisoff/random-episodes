@@ -21,22 +21,12 @@ export default function useSearch() {
                     throw new Error('Something went wrong fetching episodes');
                 }
 
+                console.log(shows)
+
                 setResults(shows);
             } catch (error) {
                 console.log(error, 'handle error');
             }
-
-            // try {
-            //     const episodes = await getEpisodesByShowId(showId);
-
-            //     if (!episodes || episodes.length === 0) {
-            //         throw new Error('Something went wrong fetching episodes');
-            //     }
-
-            //     setResults(episodes);
-            // } catch (error) {
-            //     console.log(error, 'handle error');
-            // }
         }
 
         if (searchQuery) {
