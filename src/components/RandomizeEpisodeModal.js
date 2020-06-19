@@ -84,7 +84,7 @@ function EpisodeInfoCard({ show, episode }) {
 
 function OverlaySuggestionButton({ onGetSuggestionClick }) {
     return (
-        <div className="level is-overlay">
+        <div className="level is-overlay is-mobile">
             <div className="level-item">
                 <button
                     type="button"
