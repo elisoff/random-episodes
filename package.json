@@ -17,6 +17,7 @@
   },
   "proxy": "http://localhost:5000",
   "scripts": {
+    "startall": "node index.js & react-scripts start",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",

@@ -124,7 +124,6 @@ export default function ShowsList({ list }) {
         <div className="columns is-multiline">
             {list &&
                 list.map(({ show }) => {
-                    console.log(show);
                     return (
                         <div className="column is-one-quarter" key={show.id}>
                             <div className="card my-3">

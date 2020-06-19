@@ -4,9 +4,13 @@ $progress-indeterminate-duration: 0.8s;
 
 @import '~bulma/bulma.sass';
 
-.home-page {
-    height: 80vh;
+.base-page {
+    display: flex;
+    flex-flow: column;
+    height: calc(100vh - 52px);
+}
 
+.home-page {
     .columns {
         height: 100%;
     }
@@ -19,13 +23,8 @@ $progress-indeterminate-duration: 0.8s;
 }
 
 .custom-navbar {
+    display: inline-flex;
     align-items: center;
-}
-
-.custom-footer {
-    position: relative;
-    bottom: 0;
-    width: 100vw;
 }
 
 .episode-modal {

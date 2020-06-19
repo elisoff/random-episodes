@@ -2,7 +2,19 @@ import React from 'react';
 
 export default function Footer() {
     return (
-        <footer className="custom-footer">
+        <footer className="footer">
+            <div className="content has-text-centered">
+                <p className="is-size-7">
+                    See code on{' '}
+                    <a
+                        href="https://github.com/elisoff/random-episodes"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        Github
+                    </a>
+                </p>
+            </div>
             <div className="content has-text-centered">
                 <a
                     href="https://bulma.io"

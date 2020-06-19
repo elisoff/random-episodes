@@ -1,17 +1,27 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useLocation } from 'react-router-dom';
-import Header from '../components/common/Header';
-import Footer from '../components/common/Footer';
+
+import BasePage from './BasePage';
 import ProgressBar from '../components/common/ProgressBar';
 import ShowsList from '../components/ShowsList';
 import Search from '../components/Search';
-import useSearch from '../hooks/useSearch';
+
+import API from '../api';
+
+import { DEFAULT_ERROR_MESSAGE } from '../constants';
+
+import { useAppState } from '../hooks/useAppState';
+import useRequestState from '../hooks/useRequestState';
 
 export default function ResultsPage() {
     const history = useHistory();
     const location = useLocation();
+    const { isLoading, hasError } = useAppState();
+
     const [searchQuery, setSearchQuery] = useState('');
-    const [initializeSearch, isLoading, shows] = useSearch();
+    const [shows, setShows] = useState([]);
+
+    const { setIsLoading, createErrorNotification } = useRequestState();
 
     useEffect(() => {
         const searchQueryParam = getSearchQueryParam(location);
@@ -24,8 +34,21 @@ export default function ResultsPage() {
     }, [history, location]);
 
     useEffect(() => {
-        initializeSearch(searchQuery);
-    }, [initializeSearch, searchQuery]);
+        if (searchQuery) {
+            const { getShowsByQuery } = API();
+
+            setIsLoading(true);
+
+            getShowsByQuery(searchQuery)
+                .then((results) => {
+                    setShows(results);
+                })
+                .catch(() => {
+                    createErrorNotification(DEFAULT_ERROR_MESSAGE, false);
+                })
+                .finally(() => setIsLoading(false));
+        }
+    }, [createErrorNotification, searchQuery, setIsLoading]);
 
     function getSearchQueryParam(location) {
         const urlParams = new URLSearchParams(location.search);
@@ -38,10 +61,14 @@ export default function ResultsPage() {
             history.push(`/results?q=${query}`);
         }
     }
+
+    function hasResults() {
+        return !isLoading && shows.length > 0;
+    }
+
     return (
         <>
-            <Header currentPage="/results" />
-            <div className="container mt-3">
+            <BasePage>
                 <div className="columns is-centered">
                     <div className="column is-half">
                         <Search
@@ -50,20 +77,19 @@ export default function ResultsPage() {
                         />
                     </div>
                 </div>
-                <ProgressBar hidden={!isLoading} />
-                {!isLoading && shows.length === 0 && (
+                <ProgressBar hidden={!isLoading || hasError} />
+                {!hasResults() && !hasError && (
                     <h2 className="is-size-4 mb-3">
                         No results found for "{searchQuery}"
                     </h2>
                 )}
-                {!isLoading && shows.length > 0 && (
+                {hasResults() && !hasError && (
                     <h2 className="is-size-4 mb-3">
                         Results for "{searchQuery}"
                     </h2>
                 )}
                 {!isLoading && shows.length > 0 && <ShowsList list={shows} />}
-            </div>
-            <Footer />
+            </BasePage>
         </>
     );
 }

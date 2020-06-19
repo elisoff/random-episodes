@@ -1,8 +1,8 @@
 import React from 'react';
-import Header from '../components/common/Header';
+
 import { useHistory } from 'react-router-dom';
 import Search from '../components/Search';
-import Footer from '../components/common/Footer';
+import BasePage from './BasePage';
 
 export default function HomePage() {
     const history = useHistory();
@@ -15,17 +15,14 @@ export default function HomePage() {
 
     return (
         <>
-            <Header currentPage="/" />
-            <div className="container home-page">
+            <BasePage classes="home-page">
                 <div className="columns is-centered is-vcentered">
                     <div className="column is-6">
                         <h3 className="title">TV Shows Search</h3>
                         <Search onSearch={handleOnSearch} inputValue="" />
                     </div>
                 </div>
-            </div>
-
-            <Footer />
+            </BasePage>
         </>
     );
 }

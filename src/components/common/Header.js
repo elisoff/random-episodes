@@ -18,10 +18,10 @@ export default function Header({ currentPage }) {
             aria-label="main navigation"
         >
             <div className="navbar-brand custom-navbar ml-3">
-                <h3 className="is-size-4">Random episodes</h3>
+                <h3 className="is-size-4 is-size-6-mobile">Random episodes</h3>
             </div>
 
-            <nav className="breadcrumb ml-5" aria-label="breadcrumbs">
+            <nav className="breadcrumb ml-5 is-small has-dot-separator" aria-label="breadcrumbs">
                 <ul>
                     <li className={getActiveClassIfActive('/')}>
                         <Link to="/">Home</Link>
