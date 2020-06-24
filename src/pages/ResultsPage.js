@@ -78,7 +78,7 @@ export default function ResultsPage() {
                     </div>
                 </div>
                 <ProgressBar hidden={!isLoading || hasError} />
-                {!hasResults() && !hasError && (
+                {!isLoading && shows.length === 0 && !hasError && (
                     <h2 className="is-size-4 mb-3">
                         No results found for "{searchQuery}"
                     </h2>
