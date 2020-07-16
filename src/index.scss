@@ -7,6 +7,7 @@ $progress-indeterminate-duration: 0.8s;
 .base-page {
     display: flex;
     flex-flow: column;
+
     height: calc(100vh - 52px);
 }
 
@@ -22,12 +23,21 @@ $progress-indeterminate-duration: 0.8s;
     height: 150px;
 }
 
+.show-title {
+    height: 100px;
+}
+
+.show-image {
+    cursor: pointer;
+}
+
 .custom-navbar {
     display: inline-flex;
     align-items: center;
 }
 
 .episode-modal {
+    min-height: 600px;
     .image-placeholder {
         background: #f1f1f1;
         height: 140px;

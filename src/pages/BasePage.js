@@ -5,7 +5,7 @@ import Footer from '../components/common/Footer';
 import Notification from '../components/common/Notification';
 import { useAppState } from '../hooks/useAppState';
 
-export default function BasePage({ children, classes }) {
+export default function BasePage({ children, containerClassName }) {
     const location = useLocation();
     const { notification } = useAppState();
 
@@ -13,7 +13,7 @@ export default function BasePage({ children, classes }) {
         <div className="base-page">
             <Header currentPage={location.pathname} />
             <div
-                className={`container is-fluid mt-3 ${classes ? classes : ''}`}
+                className={`container is-fluid mt-3 mb-6 ${containerClassName ? containerClassName : ''}`}
             >
                 {notification && (
                     <Notification

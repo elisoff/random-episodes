@@ -44,7 +44,10 @@ export default function Search({ onSearch, inputValue }) {
                     className="button is-info"
                     onClick={handleSearchClick}
                 >
-                    Search
+                    <span className="icon is-small">
+                        <i className="fas fa-search"></i>
+                    </span>
+                    <span>Search</span>
                 </button>
             </div>
         </div>

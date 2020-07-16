@@ -3,6 +3,7 @@ import { DateTime } from 'luxon';
 
 import Modal from './common/Modal';
 import RandomizeEpisodeModal from './RandomizeEpisodeModal';
+import Image from './common/Image';
 
 export default function ShowsList({ list }) {
     const [modalInfo, setModalInfo] = useState(null);
@@ -29,29 +30,28 @@ export default function ShowsList({ list }) {
 
     function buildShowCardHeader(show) {
         return (
-            <div className="card-image is-centered">
-                {show.image && (
-                    <figure className="image is-3by4">
-                        <img src={show.image.medium} alt={show.name} />
-                    </figure>
-                )}
-                {!show.image && (
-                    <figure className="image is-3by4 has-background-light"></figure>
-                )}
+            <div
+                className="card-image is-centered show-image"
+                onClick={handleSelectShowClick.bind(this, show)}
+            >
+                <Image info={show} />
             </div>
         );
     }
 
     function buildShowCardTitle(show) {
+        const premiereDate = show.premiered
+            ? DateTime.fromISO(show.premiered).toLocaleString(DateTime.DATE_MED)
+            : null;
+
         return (
-            <>
-                <p className="title is-5">{show.name}</p>
-                <p className="subtitle is-7">
-                    {`${show.status} - Premiered on ${DateTime.fromISO(
-                        show.premiered
-                    ).toLocaleString(DateTime.DATE_MED)}`}
+            <div className="show-title">
+                <p className="title is-6">{show.name}</p>
+                <p className="heading">{show.status}</p>
+                <p className="subtitle is-size-7">
+                    {premiereDate && `Premiered on ${premiereDate}`}
                 </p>
-            </>
+            </div>
         );
     }
 
@@ -125,7 +125,7 @@ export default function ShowsList({ list }) {
             {list &&
                 list.map(({ show }) => {
                     return (
-                        <div className="column is-one-quarter" key={show.id}>
+                        <div className="column is-2-fullhd is-3-desktop is-4-tablet" key={show.id}>
                             <div className="card my-3">
                                 {buildShowCardHeader(show)}
                                 <div className="card-content">

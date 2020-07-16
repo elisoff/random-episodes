@@ -5,7 +5,10 @@ import {
     NOTIFICATION_SUCCESS,
     NOTIFICATION_WARNING,
 } from '../../constants';
-import { REMOVE_NOTIFICATION, useAppStateReducer } from '../../hooks/useAppState';
+import {
+    REMOVE_NOTIFICATION,
+    useAppStateReducer,
+} from '../../hooks/useAppState';
 
 export default function Notification({ type, isTemporary, children }) {
     const dispatchAppState = useAppStateReducer();
@@ -25,10 +28,12 @@ export default function Notification({ type, isTemporary, children }) {
 
     return (
         <div className={`notification is-${type}`}>
-            <button
-                className="delete"
-                onClick={handleCloseNotificationClick}
-            ></button>
+            {isTemporary && (
+                <button
+                    className="delete"
+                    onClick={handleCloseNotificationClick}
+                ></button>
+            )}
             {children}
         </div>
     );
