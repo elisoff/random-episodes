@@ -9,8 +9,6 @@ WORKDIR /usr/src/app
 # A wildcard is used to ensure both package.json AND package-lock.json are copied.
 # Copying this separately prevents re-running npm install on every code change.
 COPY package*.json ./
-RUN mkdir src/ 
-COPY src/firebaseconfig.json ./src
 
 # Install production dependencies.
 RUN npm install --only=production
