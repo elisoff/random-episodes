@@ -1,6 +1,10 @@
 import React, { useContext, useReducer, createContext } from 'react';
 
-export const AppContext = createContext();
+export function createAppContext() {
+    return createContext();
+}
+
+let AppContext = createAppContext();
 
 export function useAppState() {
     return useContext(AppContext)[0];
