@@ -16,8 +16,8 @@ export default function HomePage() {
     return (
         <>
             <BasePage containerClassName="home-page">
-                <div className="columns is-centered is-vcentered">
-                    <div className="column is-6">
+                <div className="columns is-centered is-vcentered is-mobile">
+                    <div className="column is-half-desktop">
                         <h3 className="title">TV Shows Search</h3>
                         <Search onSearch={handleOnSearch} inputValue="" />
                     </div>
